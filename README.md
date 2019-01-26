@@ -12,13 +12,14 @@ which are otherwise too small to make a piece of clothing from.
 Since I'm removing several leathers, this need is lessened.
 Additionally, the stats for patchleather are so bad, that no player would ever want to use it, 
 except perhaps if they need to make items to sell.
-(It's got worse stats than lightleather, which are already very bad.)
+(It's got worse stats than lightleather, which is already very bad.)
 The stat-penalty makes sense in a general sense, since if the player could combine worse leathers to make a better one,
 they would never use the other leathers.
 Instead of downgrading to a useless leather, I'm adding new patchleather recipes, which are less harsh,
 but require leathers of similar quality.
 For example, combining Thrumbo, Sloth, and Bear leather (all very strong) would produce leather about equal to Bear
 (roughly the weakest of the "strong" leathers).
+There's three rough categories of leathers, and three corresponding patchleather recipes - weak, medium, and strong. 
 
 Animals which produce wools now no longer have special leathers.
 You can either butcher them for wool and some plainleather, or keep them alive to sheer wool.
