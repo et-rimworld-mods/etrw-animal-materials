@@ -94,11 +94,11 @@
         <description>The fur pelt of an exotic animal. It is very soft and warm.</description>
 
         <graphicData>
-            <color>(162,106,57)</color>
+            <color>(178, 170, 158)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(162,106,57)</color>
+            <color>(178, 170, 158)</color>
 
             <commonality>0.0025</commonality>
             <statFactors>
@@ -122,11 +122,11 @@
         <description>Gold old honest traditional leather; A fine material for clothing and rucksacks.</description>
 
         <graphicData>
-            <color>(162,106,57)</color>
+            <color>(162, 106, 57)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(162,106,57)</color>
+            <color>(162, 106, 57)</color>
 
             <commonality>0.7</commonality>
             <statFactors>
@@ -149,11 +149,11 @@
         <description>The fur pelt of a large predator. You're not sure if it's a bear, wolf, or some other animal.</description>
 
         <graphicData>
-            <color>(162,106,57)</color>
+            <color>(115, 95, 85)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(162,106,57)</color>
+            <color>(115, 95, 85)</color>
 
             <commonality>0.075</commonality>
             <statFactors>
@@ -176,11 +176,11 @@
         <description>The fur pelt of a panther.</description>
 
         <graphicData>
-            <color>(162,106,57)</color>
+            <color>(60, 60, 60)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(162,106,57)</color>
+            <color>(60, 60, 60)</color>
 
             <commonality>0.075</commonality>
             <statFactors>
@@ -204,11 +204,11 @@
         <description>The thick, grey skin of a rhinoceros or elephant.</description>
 
         <graphicData>
-            <color>(162,106,57)</color>
+            <color>(140, 140, 135)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(162,106,57)</color>
+            <color>(140, 140, 135)</color>
 
             <commonality>0.025</commonality>
             <statFactors>
@@ -231,11 +231,11 @@
         <description>The fur pelt of a large white animal. You're not sure if it's a sloth, polar bear, but it's definitely not thrumbo.</description>
 
         <graphicData>
-            <color>(162,106,57)</color>
+            <color>(220, 220, 210)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(162,106,57)</color>
+            <color>(220, 220, 210)</color>
 
             <commonality>0.025</commonality>
             <statFactors>
@@ -256,14 +256,14 @@
     <ThingDef ParentName="EtrwPeltBase">
         <defName>EtrwHideThrumbo</defName>
         <label>thrumbo fur</label>
-        <description>The fur pelt of a thrumbo. It is exceptionally strong and insulating.</description>
+        <description>The fur pelt of a thrumbo. It is exceptionally strong, insulating, and radiant.</description>
 
         <graphicData>
-            <color>(162,106,57)</color>
+            <color>(255, 255, 255)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(162,106,57)</color>
+            <color>(255, 255, 255)</color>
 
             <commonality>0.0025</commonality>
             <statFactors>
