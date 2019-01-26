@@ -12,14 +12,7 @@ which are otherwise too small to make a piece of clothing from.
 However, the stats for patchleather are so bad, that no player would ever want to use it;
 It's got worse stats than even the worst leathers, and it's worse than basic cloth for temperature.
 It's just vendor-trash.
-The stat-penalty makes sense in a general sense, since if the player could combine worse leathers to make a better one,
-they would never use the other leathers.
-Instead of downgrading to a useless leather, I'm adding new patchleather recipes, which are less harsh,
-but require leathers of similar quality.
-For example, combining rhino, sloth, and bear hides (all very strong) would produce leather about equal to rhino.
-(Rhino is the worst of the "strong" leathers.)
-There's three rough categories of leathers, and three corresponding patchleather recipes - weak, medium, and strong.
-Stronger leathers can be used to make the weaker patchleathers, for emergency situations.
+Since I've removed most of the leather types, there shouldn't be much need for patchleather recipes.
 
 Animals which produce wools now no longer have special leathers.
 You can either butcher them for wool and some plainleather, or keep them alive to sheer wool.

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <!-- weak -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Lizard"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideScrap</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Bird"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideScrap</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Pig"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideScrap</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Light"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideScrap</leatherDef>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Leather_Human"]/statBases/Flammability</xpath>
+                <value>
+                    <Flammability>0.3</Flammability>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Chinchilla"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideLuxury</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Fox"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideLuxury</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Lynx"]/race/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideLuxury</leatherDef>
+                </value>
+            </li>
+
+
+            <!-- medium -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Bluefur"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHidePlain</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Camel"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHidePlain</leatherDef>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Plain"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHidePlain</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Dog"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHidePlain</leatherDef>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[@Name="BigCatThingBase"]/race/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHidePanther</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Wolf"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideWolf</leatherDef>
+                </value>
+            </li>
+
+
+            <!-- strong -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Rhinoceros"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideGrey</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Elephant"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideGrey</leatherDef>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideBear</leatherDef>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideSlothPolar</leatherDef>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef/race[leatherDef="Leather_Heavy"]/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideSlothPolar</leatherDef>
+                </value>
+            </li>
+
+
+            <!-- super -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Thrumbo"]/race/leatherDef</xpath>
+                <value>
+                    <leatherDef>EtrwHideThrumbo</leatherDef>
+                </value>
+            </li>
+
+
+            <!-- remove base leathers -->
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

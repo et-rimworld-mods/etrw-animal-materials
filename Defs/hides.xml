@@ -61,33 +61,6 @@
         </statBases>
     </ThingDef>
 
-    <ThingDef ParentName="EtrwLeatherBase">
-        <defName>EtrwHideHuman</defName>
-        <label>human leather</label>
-        <description>Leather made from human skin. Despite its poor materials, it is considered a trophy material in some cultures...</description>
-
-        <graphicData>
-            <color>(211, 194, 143)</color>
-        </graphicData>
-
-        <stuffProps>
-            <color>(211, 194, 143)</color>
-
-            <commonality>0.0025</commonality>
-            <statFactors>
-                <MaxHitPoints>1.0</MaxHitPoints>
-            </statFactors>
-        </stuffProps>
-        <statBases>
-            <MarketValue>4.2</MarketValue>
-            <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-        </statBases>
-    </ThingDef>
-
     <ThingDef ParentName="EtrwPeltBase">
         <defName>EtrwHideLuxury</defName>
         <label>exotic fur</label>
