@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="PatchOperationSequence">
-        <success>Always</success>
         <operations>
             <!-- weak -->
             <li Class="PatchOperationReplace">
@@ -29,14 +28,6 @@
                 <xpath>/Defs/ThingDef/race[leatherDef="Leather_Light"]/leatherDef</xpath>
                 <value>
                     <leatherDef>EtrwHideScrap</leatherDef>
-                </value>
-            </li>
-
-
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef[defName="Leather_Human"]/statBases/Flammability</xpath>
-                <value>
-                    <Flammability>0.3</Flammability>
                 </value>
             </li>
 
@@ -125,16 +116,16 @@
             </li>
 
 
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race/leatherDef</xpath>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race</xpath>
                 <value>
                     <leatherDef>EtrwHideBear</leatherDef>
                 </value>
             </li>
 
 
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race/leatherDef</xpath>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race</xpath>
                 <value>
                     <leatherDef>EtrwHideSlothPolar</leatherDef>
                 </value>
@@ -157,10 +148,22 @@
             </li>
 
 
-            <!-- remove base leathers -->
-            <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>
-            </li>
+            <!--
+            remove base leathers
+            TODO: this will need a lot of patches, for recipes, other stuff...
+            -->
+            <!--<li Class="PatchOperationAttributeSet">-->
+                <!--<xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>-->
+                <!--<attribute>Abstract</attribute>-->
+                <!--<value>True</value>-->
+            <!--</li>-->
         </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Human"]/statBases</xpath>
+        <value>
+            <Flammability>0.3</Flammability>
+        </value>
     </Operation>
 </Patch>

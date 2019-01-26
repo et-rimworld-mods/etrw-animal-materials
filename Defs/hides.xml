@@ -27,7 +27,7 @@
         </statBases>
     </ThingDef>
 
-    <ThingDef Name="EtrwPeltBase" ParentName="ResourceBase" Abstract="True">
+    <ThingDef Name="EtrwPeltBase" ParentName="EtrwHidesBase" Abstract="True">
         <statBases>
             <Flammability>1.0</Flammability>
         </statBases>
