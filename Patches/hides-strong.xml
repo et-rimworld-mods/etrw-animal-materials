@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Rhinoceros"]/leatherDef</xpath>
+        <value>
+            <leatherDef>EtrwHideGrey</leatherDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Elephant"]/leatherDef</xpath>
+        <value>
+            <leatherDef>EtrwHideGrey</leatherDef>
+        </value>
+    </Operation>
+
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bear_Grizzly"]/race/leatherDef</xpath>
+        <value>
+            <leatherDef>EtrwHideBear</leatherDef>
+        </value>
+    </Operation>
+
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race/leatherDef</xpath>
+        <value>
+            <leatherDef>EtrwHideSlothPolar</leatherDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Heavy"]/leatherDef</xpath>
+        <value>
+            <leatherDef>EtrwHideSlothPolar</leatherDef>
+        </value>
+    </Operation>
+</Patch>

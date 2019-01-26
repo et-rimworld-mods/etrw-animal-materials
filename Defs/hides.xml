@@ -94,11 +94,11 @@
         <description>The fur pelt of an exotic animal. It is very soft and warm.</description>
 
         <graphicData>
-            <color>(178, 170, 158)</color>
+            <color>(180, 170, 155)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(178, 170, 158)</color>
+            <color>(180, 170, 155)</color>
 
             <commonality>0.0025</commonality>
             <statFactors>
@@ -144,16 +144,16 @@
     </ThingDef>
 
     <ThingDef ParentName="EtrwPeltBase">
-        <defName>EtrwHideWolfBear</defName>
-        <label>grizzly fur</label>
-        <description>The fur pelt of a large predator. You're not sure if it's a bear, wolf, or some other animal.</description>
+        <defName>EtrwHideWolf</defName>
+        <label>wolf fur</label>
+        <description>The fur pelt of a wolf.</description>
 
         <graphicData>
-            <color>(115, 95, 85)</color>
+            <color>(115, 110, 100)</color>
         </graphicData>
 
         <stuffProps>
-            <color>(115, 95, 85)</color>
+            <color>(115, 110, 100)</color>
 
             <commonality>0.075</commonality>
             <statFactors>
@@ -221,6 +221,33 @@
             <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>1.6</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="EtrwPeltBase">
+        <defName>EtrwHideBear</defName>
+        <label>bear fur</label>
+        <description>The fur pelt of a bear. You're not sure if it's a grizzly, brown, or some mutant.</description>
+
+        <graphicData>
+            <color>(220, 220, 210)</color>
+        </graphicData>
+
+        <stuffProps>
+            <color>(220, 220, 210)</color>
+
+            <commonality>0.025</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+            </statFactors>
+        </stuffProps>
+        <statBases>
+            <MarketValue>3.3</MarketValue>
+            <StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>1.6</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
         </statBases>
     </ThingDef>

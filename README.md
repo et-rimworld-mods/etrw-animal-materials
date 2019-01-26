@@ -16,10 +16,10 @@ The stat-penalty makes sense in a general sense, since if the player could combi
 they would never use the other leathers.
 Instead of downgrading to a useless leather, I'm adding new patchleather recipes, which are less harsh,
 but require leathers of similar quality.
-For example, combining Thrumbo, Sloth, and Bear leather (all very strong) would produce leather about equal to Bear
-(roughly the weakest of the "strong" leathers).
+For example, combining rhino, sloth, and bear hides (all very strong) would produce leather about equal to rhino.
+(Rhino is the worst of the "strong" leathers.)
 There's three rough categories of leathers, and three corresponding patchleather recipes - weak, medium, and strong.
-Stronger leathers can be used to make the weaker patchleathers, for emergency situations. 
+Stronger leathers can be used to make the weaker patchleathers, for emergency situations.
 
 Animals which produce wools now no longer have special leathers.
 You can either butcher them for wool and some plainleather, or keep them alive to sheer wool.
@@ -32,8 +32,13 @@ Some animals now give other materials when butchered, which can be used as repla
 Birds give down feathers, which can be used in jackets and parkas.
 Insects and tortoises give shells, which can be used in plate armor, armor vests, and flak pants and jackets.
 
+# TODO
+## Colors
 I suspect that part of the reason the base game had so many leather types, is that players want different colors of clothing.
 Instead of cluttering up the balance-space of numbers, I've added colored variants of the leathers, and recipes to change colors.
 I haven't figured out a way to set the color of a leather just with a recipe in XML, so these will actually be seperate leather types in the game,
 unlike how cloth colors work in the game.
 To keep them from cluttering up the UI, they're in new categories like "Red Leathers", so that players can click around them quickly.
+
+## Butcher wool
+Yup.
