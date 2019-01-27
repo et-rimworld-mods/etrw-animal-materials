@@ -148,15 +148,33 @@
             </li>
 
 
+            <!-- remove patchleather recipe -->
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/RecipeDef[defName="Make_Patchleather"]</xpath>
+            </li>
+
             <!--
-            remove base leathers
-            TODO: this will need a lot of patches, for recipes, other stuff...
+            "remove" base-game leathers
+            TODO: make many patches instead of this hack?
             -->
-            <!--<li Class="PatchOperationAttributeSet">-->
-                <!--<xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>-->
-                <!--<attribute>Abstract</attribute>-->
-                <!--<value>True</value>-->
-            <!--</li>-->
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>
+                <value>
+                    <thingCategories>EtrwBaseGameLeathers</thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]/stuffProps/commonality</xpath>
+                <value>
+                    <commonality>0.0</commonality>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>
+                <value>
+                    <tradeability>None</tradeability>
+                </value>
+            </li>
         </operations>
     </Operation>
 

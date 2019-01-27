@@ -25,6 +25,14 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="WoolAlpaca"]/stuffProps</xpath>
+        <value>
+            <commonality>0.0</commonality>
+        </value>
+    </Operation>
+
+
     <!--
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Muffalo"]/comps/li[@Class='CompProperties_Shearable']</xpath>
@@ -41,5 +49,12 @@
 
     <Operation Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Megasloth"]/comps/li[@Class='CompProperties_Shearable']</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="WoolMegasloth"]/stuffProps</xpath>
+        <value>
+            <commonality>0.0</commonality>
+        </value>
     </Operation>
 </Patch>

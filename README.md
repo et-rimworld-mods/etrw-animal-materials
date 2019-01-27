@@ -33,5 +33,7 @@ I haven't figured out a way to set the color of a leather just with a recipe in 
 unlike how cloth colors work in the game.
 To keep them from cluttering up the UI, they're in new categories like "Red Leathers", so that players can click around them quickly.
 
-## Butcher wool
-Yup.
+## Butcher
+- wools
+- insect shells
+- toroise shells
