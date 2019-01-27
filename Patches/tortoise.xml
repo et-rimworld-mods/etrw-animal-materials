@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Tortoise"]/race</xpath>
+        <value>
+            <lifeStages>
+                <li>
+                </li>
+
+                <li>
+                </li>
+
+                <li>
+                    <butcherBodyPart>
+                        <bodyPartGroup>Torso</bodyPartGroup>
+                        <thing>ElephantTusk</thing>
+                        <allowFemale>true</allowFemale>
+                    </butcherBodyPart>
+                </li>
+            </lifeStages>
+        </value>
+    </Operation>
+</Patch>

@@ -200,8 +200,15 @@
         </operations>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="LeatherBase"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0.3</Flammability>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Human"]/statBases</xpath>
+        <xpath>/Defs/ThingDef[@Name="LeatherBase"]/stuffProps</xpath>
         <value>
             <Flammability>0.3</Flammability>
         </value>
