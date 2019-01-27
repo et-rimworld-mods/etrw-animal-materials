@@ -27,7 +27,7 @@ Insects and tortoises give shells, which can be used in plate armor, armor vests
 
 # TODO
 ## Colors
-I suspect that part of the reason the base game had so many leather types, is that players want different colors of clothing.
+With the removal of so many leathers, there's less options for coloring clothing and chairs.
 Instead of cluttering up the balance-space of numbers, I've added colored variants of the leathers, and recipes to change colors.
 I haven't figured out a way to set the color of a leather just with a recipe in XML, so these will actually be seperate leather types in the game,
 unlike how cloth colors work in the game.
@@ -36,4 +36,4 @@ To keep them from cluttering up the UI, they're in new categories like "Red Leat
 ## Butcher
 - wools
 - insect shells
-- toroise shells
+- tortoise shells

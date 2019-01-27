@@ -153,28 +153,48 @@
                 <xpath>/Defs/RecipeDef[defName="Make_Patchleather"]</xpath>
             </li>
 
+
             <!--
             "remove" base-game leathers
             TODO: make many patches instead of this hack?
             -->
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>
-                <value>
-                    <thingCategories>
-                        <li>EtrwBaseGameLeathers</li>
-                    </thingCategories>
-                </value>
-            </li>
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]/stuffProps/commonality</xpath>
                 <value>
                     <commonality>0.0</commonality>
                 </value>
             </li>
+
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>
                 <value>
                     <tradeability>None</tradeability>
+                </value>
+            </li>
+
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef[@Name="LeatherBase"]/stuffProps/categories</xpath>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Leather_Human"]/stuffProps</xpath>
+                <value>
+                    <categories>
+                        <li>Leathery</li>
+                    </categories>
+                </value>
+            </li>
+
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef[@Name="LeatherBase"]/thingCategories</xpath>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Leather_Human"]</xpath>
+                <value>
+                    <thingCategories>
+                        <li>Leathers</li>
+                    </thingCategories>
                 </value>
             </li>
         </operations>
