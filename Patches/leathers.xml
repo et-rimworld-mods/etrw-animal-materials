@@ -160,7 +160,9 @@
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[@ParentName="LeatherBase" and defName!="Leather_Human"]</xpath>
                 <value>
-                    <thingCategories>EtrwBaseGameLeathers</thingCategories>
+                    <thingCategories>
+                        <li>EtrwBaseGameLeathers</li>
+                    </thingCategories>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
