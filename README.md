@@ -35,5 +35,6 @@ To keep them from cluttering up the UI, they're in new categories like "Red Leat
 
 ## Butcher
 - wools
-- insect shells
-- tortoise shells
+
+## Shells
+- fix recipes - they error out on the unfinished thing/item?

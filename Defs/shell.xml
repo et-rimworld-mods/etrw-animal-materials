@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <StuffCategoryDef>
+        <defName>HardShelly</defName>
+        <label>hard-shelled</label>
+    </StuffCategoryDef>
+
+    <ThingDef Name="ShellBase" ParentName="ResourceBase" Abstract="True">
+        <graphicData>
+            <!-- TODO: find better texture -->
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+
+        <stuffProps>
+            <stuffAdjective>hard-shelled</stuffAdjective>
+            <constructEffect>ConstructWood</constructEffect>
+            <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <isTechHediff>true</isTechHediff>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>MakeSimpleHelmetFromShell</defName>
+        <label>make simple helmet (hard-shell)</label>
+        <description>Make a simple helmet from a hard-shell.</description>
+        <jobString>Making a simple helmet from a hard-shell.</jobString>
+
+        <workSpeedStat>SculptingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Sculpt</effectWorking>
+        <soundWorking>Recipe_Sculpt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+						<li>ShellTortoise</li>
+						<li>ShellInsect</li>
+					</thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ShellTortoise</li>
+                <li>ShellInsect</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Apparel_SimpleHelmet>1</Apparel_SimpleHelmet>
+        </products>
+        <workAmount>4000</workAmount>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+            <li>TableMachining</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>MakePlateArmorFromShell</defName>
+        <label>make plate armor (hard-shell)</label>
+        <description>Make plate armor from hard shell.</description>
+        <jobString>Making plate armor from hard shell.</jobString>
+
+        <workSpeedStat>SculptingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Sculpt</effectWorking>
+        <soundWorking>Recipe_Sculpt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+						<li>ShellTortoise</li>
+						<li>ShellInsect</li>
+					</thingDefs>
+                </filter>
+                <count>170</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ShellTortoise</li>
+                <li>ShellInsect</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Apparel_PlateArmor>1</Apparel_PlateArmor>
+        </products>
+        <workAmount>70000</workAmount>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+            <li>TableMachining</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>
