@@ -34,6 +34,5 @@ unlike how cloth colors work in the game.
 To keep them from cluttering up the UI, they're in new categories like "Red Leathers", so that players can click around them quickly.
 
 ## Butcher
-- wools
 - insect shells
 - tortoise shells
