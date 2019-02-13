@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Change the base-game leather. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Plain"]/statBases</xpath>
+        <value>
+            <flammability>0.3</flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Plain"]/stuffProps/commonality</xpath>
+        <value>
+            <commonality>0.95</commonality>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Plain"]/statBases</xpath>
+        <value>
+            <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+
+    <!-- Muffalo -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Bluefur"]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Plain</leatherDef>
+        </value>
+    </Operation>
+
+
+    <!-- Camel and Alpaca -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Camel"]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Plain</leatherDef>
+        </value>
+    </Operation>
+
+
+    <!-- Dog -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Dog"]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Plain</leatherDef>
+        </value>
+    </Operation>
+</Patch>

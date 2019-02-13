@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Change the base-game leather. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/description</xpath>
+        <value>
+            <description>The heavy off-white fur pelt of a large, heavy animal.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/statBases/MarketValue</xpath>
+        <value>
+            <MarketValue>4.0</MarketValue>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/statBases</xpath>
+        <value>
+            <StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+
+    <!-- Polar Bear -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race</xpath>
+        <value>
+            <leatherDef>Leather_Heavy</leatherDef>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Change the base-game leather. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Light"]/label</xpath>
+        <value>
+            <label>scrap-leather</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Light"]/description</xpath>
+        <value>
+            <description>Various pieces of smaller or weaker animal skins, sewn and glued together. It is neither very insulating nor protective.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Light"]/statBases</xpath>
+        <value>
+            <flammability>0.3</flammability>
+            <StuffPower_Armor_Heat>1.3</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+
+    <!-- Lizard -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Lizard"]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Light</leatherDef>
+        </value>
+    </Operation>
+
+
+    <!-- Bird -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Bird"]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Light</leatherDef>
+        </value>
+    </Operation>
+
+
+    <!-- Pig -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Pig"]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Light</leatherDef>
+        </value>
+    </Operation>
+</Patch>
