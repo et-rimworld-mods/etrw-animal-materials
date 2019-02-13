@@ -32,7 +32,7 @@
     </Operation>
 
 
-    <!-- Camel -->
+    <!-- Camel and Alpaca -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef/race[leatherDef="Leather_Camel"]/leatherDef</xpath>
         <value>

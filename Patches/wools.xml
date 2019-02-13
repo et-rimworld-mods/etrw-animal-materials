@@ -1,109 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!--
-    "remove" alpaca wool and megasloth wool
-    -->
-
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[@Name="WoolBase"]/stuffProps/categories</xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[@Name="WoolBase"]/thingCategories</xpath>
-    </Operation>
-
-
-    <!--
+    <!-- Wool should be more flammable than leather. -->
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="Dromedary"]/comps/li[@Class='CompProperties_Shearable']</xpath>
+        <xpath>/Defs/ThingDef[@Name="WoolBase"]/statBases/Flammability</xpath>
         <value>
-            <li Class="CompProperties_Shearable">
-                <woolDef>EtrwWoolDesert</woolDef>
-                <shearIntervalDays>25</shearIntervalDays>
-                <woolAmount>100</woolAmount>
-            </li>
-        </value>
-    </Operation>
-    -->
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolCamel"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Fabric</li>
-            </categories>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolCamel"]</xpath>
-        <value>
-            <thingCategories>
-                <li>Textiles</li>
-            </thingCategories>
+            <Flammability>0.7</Flammability>
         </value>
     </Operation>
 
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="Alpaca"]/comps/li[@Class='CompProperties_Shearable']</xpath>
-        <value>
-            <li Class="CompProperties_Shearable">
-                <woolDef>WoolMuffalo</woolDef>
-                <shearIntervalDays>15</shearIntervalDays>
-                <woolAmount>100</woolAmount>
-            </li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolAlpaca"]/stuffProps</xpath>
-        <value>
-            <commonality>0.0</commonality>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolAlpaca"]</xpath>
-        <value>
-            <tradeability>None</tradeability>
-        </value>
-    </Operation>
-
-
-    <!--
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="Muffalo"]/comps/li[@Class='CompProperties_Shearable']</xpath>
-        <value>
-            <li Class="CompProperties_Shearable">
-                <woolDef>EtrwWoolWinter</woolDef>
-                <shearIntervalDays>25</shearIntervalDays>
-                <woolAmount>100</woolAmount>
-            </li>
-        </value>
-    </Operation>
-    -->
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolMuffalo"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Fabric</li>
-            </categories>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolMuffalo"]</xpath>
-        <value>
-            <thingCategories>
-                <li>Textiles</li>
-            </thingCategories>
-        </value>
-    </Operation>
-
-
+    <!-- "Remove" megasloth wool. -->
     <Operation Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Megasloth"]/comps/li[@Class='CompProperties_Shearable']</xpath>
     </Operation>
@@ -119,6 +25,34 @@
         <xpath>/Defs/ThingDef[defName="WoolMegasloth"]</xpath>
         <value>
             <tradeability>None</tradeability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name="WoolBase"]/stuffProps/categories</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name="WoolBase"]/thingCategories</xpath>
+    </Operation>
+
+
+    <!-- Other wools: Put back recipe and stockpile categories, after the megasloth removal. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="WoolCamel" or defName="WoolAlpaca" or defName="WoolMuffalo"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="WoolCamel" or defName="WoolAlpaca" or defName="WoolMuffalo"]</xpath>
+        <value>
+            <thingCategories>
+                <li>Textiles</li>
+            </thingCategories>
         </value>
     </Operation>
 </Patch>

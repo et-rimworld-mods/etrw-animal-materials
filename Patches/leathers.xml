@@ -9,7 +9,8 @@
 
 
     <!--
-    "remove" unused base-game leathers
+    Commonality
+    Removes from all randomly-generated items.
     -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[
@@ -29,6 +30,10 @@
         </value>
     </Operation>
 
+    <!--
+    Tradeability
+    This disallows in-progress games to sell, but keeps them out of all the trader menus.
+    -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[
             defName="Leather_Dog" or
@@ -47,6 +52,11 @@
         </value>
     </Operation>
 
+    <!--
+    thingCategories
+    Keeps them out of all the stockpile menus.
+    (Or maybe dumps them all to the bottom?)
+    -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[
             defName="Leather_Dog" or
@@ -65,6 +75,10 @@
         </value>
     </Operation>
 
+    <!--
+    stuffProps/categories/Leathery
+    Doesn't allow in-progress games to use them up in recipes, but keeps them out of crafting menus.
+    -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[
             defName="Leather_Dog" or
