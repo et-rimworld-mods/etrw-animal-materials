@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Since these animals no longer give special leather, give their wool upon butchering. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Muffalo"]</xpath>
+        <value>
+            <butcherProducts>
+                <WoolMuffalo>100</WoolMuffalo>
+            </butcherProducts>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Alpaca"]</xpath>
+        <value>
+            <butcherProducts>
+                <WoolAlpaca>100</WoolAlpaca>
+            </butcherProducts>
+        </value>Dromedary
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Dromedary"]</xpath>
+        <value>
+            <butcherProducts>
+                <WoolCamel>100</WoolCamel>
+            </butcherProducts>
+        </value>
+    </Operation>
+</Patch>
