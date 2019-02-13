@@ -37,7 +37,7 @@
     </Operation>
 
 
-    <!-- Other wools: Put back recipe and stockpile categories, after the megasloth removal. -->
+    <!-- Other wools: Put back recipe and stockpile categories, and adjust commonality, after the megasloth removal. -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="WoolCamel" or defName="WoolAlpaca" or defName="WoolMuffalo"]/stuffProps</xpath>
         <value>
@@ -53,6 +53,13 @@
             <thingCategories>
                 <li>Textiles</li>
             </thingCategories>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="WoolCamel" or defName="WoolAlpaca" or defName="WoolMuffalo"]/stuffProps</xpath>
+        <value>
+            <commonality>0.16</commonality>
         </value>
     </Operation>
 </Patch>
