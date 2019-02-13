@@ -16,7 +16,7 @@
             <butcherProducts>
                 <WoolAlpaca>100</WoolAlpaca>
             </butcherProducts>
-        </value>Dromedary
+        </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">

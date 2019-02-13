@@ -24,7 +24,7 @@
 
 
     <!-- Polar Bear -->
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race</xpath>
         <value>
             <leatherDef>Leather_Heavy</leatherDef>

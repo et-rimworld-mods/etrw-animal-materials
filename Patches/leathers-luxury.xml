@@ -18,7 +18,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/statBases</xpath>
         <value>
-            <flammability>0.3</flammability>
+            <Flammability>0.3</Flammability>
             <StuffPower_Armor_Heat>1.3</StuffPower_Armor_Heat>
         </value>
     </Operation>

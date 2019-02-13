@@ -2,9 +2,12 @@
 <Patch>
     <!-- Change the base-game leather. -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Plain"]/statBases</xpath>
+        <xpath>/Defs/ThingDef[defName="Leather_Plain"]</xpath>
         <value>
-            <flammability>0.3</flammability>
+            <statBases>
+                <Flammability>0.3</Flammability>
+                <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+            </statBases>
         </value>
     </Operation>
 
@@ -12,13 +15,6 @@
         <xpath>/Defs/ThingDef[defName="Leather_Plain"]/stuffProps/commonality</xpath>
         <value>
             <commonality>0.95</commonality>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Plain"]/statBases</xpath>
-        <value>
-            <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
         </value>
     </Operation>
 
