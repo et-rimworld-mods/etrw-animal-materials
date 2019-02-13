@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <!-- Change the base-game leather. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/label</xpath>
+        <value>
+            <label>grey-leather</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/description</xpath>
+        <value>
+            <description>The steel-grey leather of a large warm-weather animal. While very protective in combat, it insulates poorly.</description>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases</xpath>
         <value>
