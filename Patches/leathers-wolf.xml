@@ -7,4 +7,13 @@
             <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
         </value>
     </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Wolf"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+        </value>
+    </Operation>
 </Patch>

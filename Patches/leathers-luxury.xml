@@ -23,6 +23,15 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+        </value>
+    </Operation>
+
 
     <!-- Fox -->
     <Operation Class="PatchOperationReplace">

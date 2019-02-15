@@ -22,11 +22,10 @@ It also differentiates them more from animals whose hide is thick enough, or the
 that the hairs are always attached to the hide, like wolf pelts or bear hides.
 
 Some animals now give other materials when butchered, which can be used as replacements in some recipes.
-Birds give down feathers, which can be used in jackets and parkas.
 Insects and tortoises give shells, which can be used in plate armor, armor vests, and flak pants and jackets.
 
 # TODO
-## Colors
+## Colors?
 With the removal of so many leathers, there's less options for coloring clothing and chairs.
 Instead of cluttering up the balance-space of numbers, I've added colored variants of the leathers, and recipes to change colors.
 I haven't figured out a way to set the color of a leather just with a recipe in XML, so these will actually be seperate leather types in the game,
@@ -35,6 +34,7 @@ To keep them from cluttering up the UI, they're in new categories like "Red Leat
 
 ## Butcher
 - wools
+- down feathers?
 
 ## Shells
 - fix recipes - they error out on the unfinished thing/item?

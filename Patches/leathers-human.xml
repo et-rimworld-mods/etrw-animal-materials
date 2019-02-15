@@ -14,6 +14,9 @@
             <statFactors>
                 <MaxHitPoints>1.0</MaxHitPoints>
             </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
         </value>
     </Operation>
 </Patch>

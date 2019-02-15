@@ -36,6 +36,15 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+        </value>
+    </Operation>
+
 
     <!-- Elephant -->
     <Operation Class="PatchOperationReplace">
