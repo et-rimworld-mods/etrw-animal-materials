@@ -55,7 +55,6 @@
     <!--
     thingCategories
     Keeps them out of all the stockpile menus.
-    (Or maybe dumps them all to the bottom?)
     -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[
@@ -76,24 +75,10 @@
     </Operation>
 
     <!--
-    stuffProps/categories/Leathery
-    Doesn't allow in-progress games to use them up in recipes, but keeps them out of crafting menus.
+    Remove "leathery" so unused leathers can't be used in recipes.
+    (Keeps menus clean.)
     -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[
-            defName="Leather_Dog" or
-            defName="Leather_Camel" or
-            defName="Leather_Bluefur" or
-            defName="Leather_Pig" or
-            defName="Leather_Bird" or
-            defName="Leather_Fox" or
-            defName="Leather_Lizard" or
-            defName="Leather_Elephant" or
-            defName="Leather_Patch"
-            ]/stuffProps
-        </xpath>
-        <value>
-            <categories/>
-        </value>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name="LeatherBase"]/stuffProps/categories/li[text()="Leathery"]</xpath>
     </Operation>
 </Patch>

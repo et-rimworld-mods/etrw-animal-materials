@@ -21,6 +21,9 @@
             <statFactors>
                 <MaxHitPoints>1.5</MaxHitPoints>
             </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
         </value>
     </Operation>
 
