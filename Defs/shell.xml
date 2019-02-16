@@ -28,6 +28,7 @@
         <techHediffsTags>
             <li>Poor</li>
         </techHediffsTags>
+        <tradeability>Buyable</tradeability>
     </ThingDef>
 
     <RecipeDef>

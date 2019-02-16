@@ -16,7 +16,7 @@
             <Flammability>0.2</Flammability>
             <DeteriorationRate>0.5</DeteriorationRate>
             <StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.58</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>1.0</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
