@@ -21,6 +21,9 @@ but when butchered the hairs were somehow magically attached to the skin, comple
 It also differentiates them more from animals whose hide is thick enough, or the hairs short enough,
 that the hairs are always attached to the hide, like wolf pelts or bear hides.
 
+Some animals now give other materials when butchered, which can be used as replacements in some recipes.
+Insects and tortoises give shells, which can be used in plate armor, armor vests, and flak pants and jackets.
+
 # TODO
 ## Colors?
 With the removal of so many leathers, there's less options for coloring clothing and chairs.
@@ -30,5 +33,4 @@ unlike how cloth colors work in the game.
 To keep them from cluttering up the UI, they're in new categories like "Red Leathers", so that players can click around them quickly.
 
 ## Butcher
-- insect shells
-- tortoise shells
+- down feathers?

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Tortoise"]</xpath>
+        <value>
+            <butcherProducts>
+                <ShellTortoise>40</ShellTortoise>
+            </butcherProducts>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Megascarab"]</xpath>
+        <value>
+            <butcherProducts>
+                <ShellInsect>10</ShellInsect>
+            </butcherProducts>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Spelopede"]</xpath>
+        <value>
+            <butcherProducts>
+                <ShellInsect>60</ShellInsect>
+            </butcherProducts>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Megaspider"]</xpath>
+        <value>
+            <butcherProducts>
+                <ShellInsect>200</ShellInsect>
+            </butcherProducts>
+        </value>
+    </Operation>
+</Patch>
