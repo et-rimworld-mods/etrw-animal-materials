@@ -12,7 +12,7 @@
         <statBases>
             <MarketValue>3.0</MarketValue>
             <MaxHitPoints>250</MaxHitPoints>
-            <Mass>0.5</Mass>
+            <Mass>0.3</Mass>
             <Flammability>0.1</Flammability>
             <DeteriorationRate>0.5</DeteriorationRate>
             <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
