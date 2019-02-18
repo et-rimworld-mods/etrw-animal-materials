@@ -15,7 +15,6 @@
         <soundDrop>Wood_Drop</soundDrop>
 
         <stuffProps>
-            <stuffAdjective>hard-shelled</stuffAdjective>
             <constructEffect>ConstructWood</constructEffect>
             <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>

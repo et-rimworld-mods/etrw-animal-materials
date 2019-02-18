@@ -32,5 +32,16 @@ I haven't figured out a way to set the color of a leather just with a recipe in 
 unlike how cloth colors work in the game.
 To keep them from cluttering up the UI, they're in new categories like "Red Leathers", so that players can click around them quickly.
 
-## Butcher
-- down feathers?
+## down feathers?
+- cloth + down for cheaper recipes, decent temperature, but garbage combat stats
+- use in:
+    - jackets
+    - parkas
+    - tuques...?
+    - beds?
+    - sleeping rolls?
+
+# split this repo into two?
+- one for simplifying stuff
+- one for adding new stuff? 
+- ? 

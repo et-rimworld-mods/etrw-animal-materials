@@ -6,7 +6,7 @@
         <description>The hard shell of a genetically-engineered insectoid. While difficult to work with, it can be used to make simple armor.</description>
 
         <graphicData>
-            <color>(80, 80, 80)</color>
+            <color>(120, 120, 120)</color>
         </graphicData>
 
         <statBases>
@@ -23,8 +23,9 @@
             <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
         </statBases>
         <stuffProps>
+            <stuffAdjective>insect-shell</stuffAdjective>
+            <color>(120, 120, 120)</color>
             <commonality>0.05</commonality>
-            <color>(80, 80, 80)</color>
             <statFactors>
                 <MaxHitPoints>0.9</MaxHitPoints>
                 <Flammability>0.1</Flammability>

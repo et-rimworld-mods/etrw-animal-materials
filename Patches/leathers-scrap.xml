@@ -26,6 +26,9 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Leather_Light"]/stuffProps</xpath>
         <value>
+            <statFactors>
+                <Flammability>0.3</Flammability>
+            </statFactors>
             <categories>
                 <li>Leathery</li>
             </categories>

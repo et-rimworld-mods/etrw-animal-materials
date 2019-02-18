@@ -12,6 +12,7 @@
         <xpath>/Defs/ThingDef[defName="Leather_Human"]/stuffProps</xpath>
         <value>
             <statFactors>
+                <Flammability>0.3</Flammability>
                 <MaxHitPoints>1.0</MaxHitPoints>
             </statFactors>
             <categories>

@@ -23,8 +23,9 @@
             <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
         </statBases>
         <stuffProps>
-            <commonality>0.1</commonality>
+            <stuffAdjective>tortoise-shell</stuffAdjective>
             <color>(100, 130, 60)</color>
+            <commonality>0.1</commonality>
             <statFactors>
                 <MaxHitPoints>0.9</MaxHitPoints>
                 <Flammability>0.2</Flammability>
