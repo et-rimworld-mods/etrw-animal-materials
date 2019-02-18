@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- Wool should be more flammable than leather. -->
+    <!--
+    Wool should be more flammable than leather.
+    Wool is also typically more flame-resistant than cotton, so the 1.7 in the base game is probably a typo for the stuffprops...
+    -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[@Name="WoolBase"]/statBases/Flammability</xpath>
         <value>
-            <Flammability>0.7</Flammability>
+            <Flammability>0.6</Flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="WoolBase"]/stuffProps/statFactors/Flammability</xpath>
+        <value>
+            <Flammability>0.6</Flammability>
         </value>
     </Operation>
 
