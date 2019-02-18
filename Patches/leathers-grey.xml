@@ -22,6 +22,13 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps/statFactors</xpath>
+        <value>
+            <Flammability>0.3</Flammability>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases/MarketValue</xpath>
         <value>
@@ -39,9 +46,6 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps</xpath>
         <value>
-            <statFactors>
-                <Flammability>0.3</Flammability>
-            </statFactors>
             <categories>
                 <li>Leathery</li>
             </categories>
