@@ -19,12 +19,12 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Dromedary"]</xpath>
-        <value>
-            <butcherProducts>
-                <WoolCamel>100</WoolCamel>
-            </butcherProducts>
-        </value>
-    </Operation>
+<!--    <Operation Class="PatchOperationAdd">-->
+<!--        <xpath>/Defs/ThingDef[defName="Dromedary"]</xpath>-->
+<!--        <value>-->
+<!--            <butcherProducts>-->
+<!--                <WoolCamel>100</WoolCamel>-->
+<!--            </butcherProducts>-->
+<!--        </value>-->
+<!--    </Operation>-->
 </Patch>

@@ -19,57 +19,23 @@
     </Operation>
 
 
-    <!-- "Remove" megasloth wool. -->
+    <!-- "remove" megasloth wool -->
     <Operation Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Megasloth"]/comps/li[@Class='CompProperties_Shearable']</xpath>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolMegasloth"]/stuffProps</xpath>
-        <value>
-            <commonality>0.0</commonality>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
+        <!--
+        a lot of things are defined in the base wool, so to remove a wool
+        without a lot of patches to remove, then patches to add back in to the other wools,
+        make it abstract
+        (patches happen before defs, so I can't patch the base game to have a parent of some empty-values wool)
+        -->
         <xpath>/Defs/ThingDef[defName="WoolMegasloth"]</xpath>
         <value>
-            <tradeability>None</tradeability>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[@Name="WoolBase"]/stuffProps/categories</xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[@Name="WoolBase"]/thingCategories</xpath>
-    </Operation>
-
-
-    <!-- Other wools: Put back recipe and stockpile categories, and adjust commonality, after the megasloth removal. -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolCamel" or defName="WoolAlpaca" or defName="WoolMuffalo"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Fabric</li>
-            </categories>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolCamel" or defName="WoolAlpaca" or defName="WoolMuffalo"]</xpath>
-        <value>
-            <thingCategories>
-                <li>Textiles</li>
-            </thingCategories>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoolCamel" or defName="WoolAlpaca" or defName="WoolMuffalo"]/stuffProps</xpath>
-        <value>
-            <commonality>0.16</commonality>
+            <ThingDef ParentName="WoolBase" Abstract="True">
+                <defName>WoolMegasloth</defName>
+            </ThingDef>
         </value>
     </Operation>
 </Patch>
