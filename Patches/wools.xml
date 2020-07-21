@@ -39,6 +39,17 @@
         </value>
     </Operation>
 
+    <!-- make camels shear-able again -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Dromedary"]/comps/li[@Class="CompProperties_Milkable"]</xpath>
+        <value>
+            <li Class="CompProperties_Shearable">
+                <woolDef>WoolCamel</woolDef>
+                <shearIntervalDays>20</shearIntervalDays>
+                <woolAmount>100</woolAmount>
+            </li>
+        </value>
+    </Operation>
 
     <!--
     make wools into a collapsible list in recipes (benches start at parent category "Textiles")
