@@ -36,7 +36,7 @@
         <description>Make a simple helmet from a hard-shell.</description>
         <jobString>Making a simple helmet from a hard-shell.</jobString>
 
-        <workSpeedStat>SculptingSpeed</workSpeedStat>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <effectWorking>Sculpt</effectWorking>
         <soundWorking>Recipe_Sculpt</soundWorking>
@@ -75,7 +75,7 @@
         <description>Make plate armor from hard shell.</description>
         <jobString>Making plate armor from hard shell.</jobString>
 
-        <workSpeedStat>SculptingSpeed</workSpeedStat>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <effectWorking>Sculpt</effectWorking>
         <soundWorking>Recipe_Sculpt</soundWorking>
