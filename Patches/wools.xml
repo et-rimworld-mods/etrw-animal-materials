@@ -38,4 +38,16 @@
             </ThingDef>
         </value>
     </Operation>
+
+
+    <!--
+    make wools into a collapsible list in recipes (benches start at parent category "Textiles")
+    and also a category in the game-overlay
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[@Name="WoolBase"]/thingCategories/li[text()="Textiles"]</xpath>
+        <value>
+            <li>Wools</li>
+        </value>
+    </Operation>
 </Patch>

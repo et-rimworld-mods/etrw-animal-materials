@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--
+    make wools into a collapsible list in recipes (benches start at parent category "Textiles")
+    and also a category in the game-overlay
+    -->
+    <ThingCategoryDef>
+        <defName>Wools</defName>
+        <label>wools</label>
+        <parent>Textiles</parent>
+        <iconPath>Things/Item/Resource/Wool</iconPath>
+    </ThingCategoryDef>
+</Defs>
