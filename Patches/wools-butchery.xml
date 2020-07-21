@@ -19,12 +19,16 @@
         </value>
     </Operation>
 
-<!--    <Operation Class="PatchOperationAdd">-->
-<!--        <xpath>/Defs/ThingDef[defName="Dromedary"]</xpath>-->
-<!--        <value>-->
-<!--            <butcherProducts>-->
-<!--                <WoolCamel>100</WoolCamel>-->
-<!--            </butcherProducts>-->
-<!--        </value>-->
-<!--    </Operation>-->
+    <!--
+    wait...*this* patch happens after my def for adding camel hair back into the game
+    but the (broken / removed) patch to re-parent megasloth-wool happened before the parent-class def...?
+    -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Dromedary"]</xpath>
+        <value>
+            <butcherProducts>
+                <WoolCamel>100</WoolCamel>
+            </butcherProducts>
+        </value>
+    </Operation>
 </Patch>

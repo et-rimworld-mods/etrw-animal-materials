@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WoolBase">
+        <defName>WoolCamel</defName>
+        <label>camel-hair</label>
+        <description>Camel-hair is a bit coarse, but protects from the heat. A worthwhile trade!</description>
+        <graphicData>
+            <color>(200, 180, 150)</color>
+        </graphicData>
+
+        <stuffProps>
+            <color>(200, 180, 150)</color>
+        </stuffProps>
+        <statBases>
+            <StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+        </statBases>
+    </ThingDef>
+</Defs>
