@@ -44,15 +44,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Leathery</li>
-            </categories>
-        </value>
-    </Operation>
-
     <!-- grey: animals -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef/race[leatherDef="Leather_Elephant"]/leatherDef</xpath>
@@ -112,15 +103,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Leathery</li>
-            </categories>
-        </value>
-    </Operation>
-
 
     <!-- heavy: stats -->
     <Operation Class="PatchOperationReplace">
@@ -134,15 +116,6 @@
         <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/statBases</xpath>
         <value>
             <StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Leathery</li>
-            </categories>
         </value>
     </Operation>
 

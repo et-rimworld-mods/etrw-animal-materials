@@ -38,15 +38,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Light"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Leathery</li>
-            </categories>
-        </value>
-    </Operation>
-
     <!-- light: animals -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef/race[
@@ -78,9 +69,6 @@
                 <MaxHitPoints>1.0</MaxHitPoints>
                 <Beauty>0.5</Beauty>
             </statFactors>
-            <categories>
-                <li>Leathery</li>
-            </categories>
         </value>
     </Operation>
 
@@ -104,15 +92,6 @@
         <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/statBases</xpath>
         <value>
             <StuffPower_Armor_Heat>1.3</StuffPower_Armor_Heat>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/stuffProps</xpath>
-        <value>
-            <categories>
-                <li>Leathery</li>
-            </categories>
         </value>
     </Operation>
 
