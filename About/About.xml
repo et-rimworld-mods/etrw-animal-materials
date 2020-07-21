@@ -2,9 +2,10 @@
 <ModMetaData>
     <name>ET's Animal Materials</name>
     <author>Elia Tarasoff</author>
+    <packageId>EliaTarasoff.AnimalMaterials</packageId>
     <url>https://github.com/et-rimworld-mods/etrw-animal-materials</url>
     <supportedVersions>
         <li>1.0</li>
     </supportedVersions>
-    <description>See the README.md file.</description>
+    <description>See the README.md and LICENSE files.</description>
 </ModMetaData>

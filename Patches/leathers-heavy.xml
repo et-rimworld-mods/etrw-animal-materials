@@ -1,17 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- Change the base-game leather. -->
+    <!-- grey: stats -->
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/description</xpath>
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/label</xpath>
         <value>
-            <description>The heavy off-white fur pelt of a large, heavy animal.</description>
+            <label>grey-leather</label>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/statBases/MarketValue</xpath>
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/description</xpath>
         <value>
-            <MarketValue>4.0</MarketValue>
+            <description>The steel-grey leather of a large warm-weather animal. While very protective in combat, it insulates poorly.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases</xpath>
+        <value>
+            <Flammability>0.3</Flammability>
+            <StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases/MarketValue</xpath>
+        <value>
+            <MarketValue>3.0</MarketValue>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps/statFactors</xpath>
+        <value>
+            <Flammability>0.3</Flammability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps/statFactors/Beauty</xpath>
+        <value>
+            <MarketValue>0.9</MarketValue>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+        </value>
+    </Operation>
+
+    <!-- grey: animals -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Elephant"]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Rhinoceros</leatherDef>
+        </value>
+    </Operation>
+
+
+    <!-- bear: stats -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/description</xpath>
+        <value>
+            <description>The heavy fur pelt of a bear.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+            <StuffPower_Armor_Sharp>1.25</StuffPower_Armor_Sharp>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/statBases</xpath>
+        <value>
+            <StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/statBases/StuffPower_Insulation_Cold</xpath>
+        <value>
+            <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/statBases/StuffPower_Insulation_Heat</xpath>
+        <value>
+            <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/stuffProps/statFactors</xpath>
+        <value>
+            <MaxHitPoints>1.5</MaxHitPoints>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/stuffProps/commonality</xpath>
+        <value>
+            <commonality>0.025</commonality>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Bear"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+        </value>
+    </Operation>
+
+
+    <!-- heavy: stats -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/description</xpath>
+        <value>
+            <description>The heavy off-white fur pelt of a large, heavy animal.</description>
         </value>
     </Operation>
 
@@ -31,8 +146,7 @@
         </value>
     </Operation>
 
-
-    <!-- Polar Bear -->
+    <!-- heavy: animals -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Bear_Polar"]/race</xpath>
         <value>

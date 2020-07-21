@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- Change the base-game leather. -->
+    <!-- light: stats -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Leather_Light"]/label</xpath>
         <value>
@@ -27,6 +27,14 @@
         <xpath>/Defs/ThingDef[defName="Leather_Light"]/stuffProps/statFactors</xpath>
         <value>
             <Flammability>0.3</Flammability>
+            <Beauty>0.3</Beauty>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Plain"]/stuffProps/commonality</xpath>
+        <value>
+            <commonality>0.075</commonality>
         </value>
     </Operation>
 
@@ -39,30 +47,91 @@
         </value>
     </Operation>
 
-
-    <!-- Lizard -->
+    <!-- light: animals -->
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Lizard"]/leatherDef</xpath>
+        <xpath>/Defs/ThingDef/race[
+            leatherDef="Leather_Lizard" or
+            leatherDef="Leather_Bird" or
+            leatherDef="Leather_Pig" or
+            leatherDef="Leather_Dog"
+        ]/leatherDef</xpath>
         <value>
             <leatherDef>Leather_Light</leatherDef>
         </value>
     </Operation>
 
 
-    <!-- Bird -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Bird"]/leatherDef</xpath>
+    <!-- human: stats -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Human"]/statBases</xpath>
         <value>
-            <leatherDef>Leather_Light</leatherDef>
+            <Flammability>0.3</Flammability>
+            <StuffPower_Armor_Heat>1.3</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Human"]/stuffProps</xpath>
+        <value>
+            <statFactors>
+                <Flammability>0.3</Flammability>
+                <MaxHitPoints>1.0</MaxHitPoints>
+                <Beauty>0.5</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
         </value>
     </Operation>
 
 
-    <!-- Pig -->
+    <!-- luxury: stats -->
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Pig"]/leatherDef</xpath>
+        <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/label</xpath>
         <value>
-            <leatherDef>Leather_Light</leatherDef>
+            <label>luxury fur</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/description</xpath>
+        <value>
+            <description>A luxurious fur pelt. It is very soft and warm.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/statBases</xpath>
+        <value>
+            <StuffPower_Armor_Heat>1.3</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Chinchilla"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+        </value>
+    </Operation>
+
+
+    <!-- luxury: animals -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef/race[
+            leatherDef="Leather_Fox" or
+            leatherDef="Leather_GuineaPig"
+        ]/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Chinchilla</leatherDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Lynx"]/race/leatherDef</xpath>
+        <value>
+            <leatherDef>Leather_Chinchilla</leatherDef>
         </value>
     </Operation>
 </Patch>

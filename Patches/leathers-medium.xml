@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- Change the base-game leather. -->
+    <!-- plain: stats -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Leather_Plain"]</xpath>
         <value>
@@ -23,6 +23,7 @@
         <value>
             <statFactors>
                 <Flammability>0.3</Flammability>
+                <Beauty>0.7</Beauty>
             </statFactors>
             <categories>
                 <li>Leathery</li>
@@ -30,30 +31,50 @@
         </value>
     </Operation>
 
-
-    <!-- Muffalo -->
+    <!-- plain: animals -->
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Bluefur"]/leatherDef</xpath>
+        <xpath>/Defs/ThingDef/race[
+            leatherDef="Leather_Bluefur" or
+            leatherDef="Leather_Camel"
+        ]/leatherDef</xpath>
         <value>
             <leatherDef>Leather_Plain</leatherDef>
         </value>
     </Operation>
 
 
-    <!-- Camel and Alpaca -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Camel"]/leatherDef</xpath>
+    <!-- wolf: stats -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Wolf"]/statBases</xpath>
         <value>
-            <leatherDef>Leather_Plain</leatherDef>
+            <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Wolf"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
         </value>
     </Operation>
 
 
-    <!-- Dog -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef/race[leatherDef="Leather_Dog"]/leatherDef</xpath>
+    <!-- panther: stats -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Panthera"]/statBases</xpath>
         <value>
-            <leatherDef>Leather_Plain</leatherDef>
+            <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Leather_Panthera"]/stuffProps</xpath>
+        <value>
+            <categories>
+                <li>Leathery</li>
+            </categories>
         </value>
     </Operation>
 </Patch>
