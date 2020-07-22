@@ -2,7 +2,7 @@
 <Patch>
     <!-- Since these animals no longer give special leather, give their wool upon butchering. -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Muffalo"]</xpath>
+        <xpath>/Defs/ThingDef[comps/li[@Class="CompProperties_Shearable"]/woolDef[text()="WoolMuffalo"]]</xpath>
         <value>
             <butcherProducts>
                 <WoolMuffalo>100</WoolMuffalo>
@@ -11,13 +11,32 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Alpaca"]</xpath>
+        <xpath>/Defs/ThingDef[comps/li[@Class="CompProperties_Shearable"]/woolDef[text()="WoolAlpaca"]]</xpath>
         <value>
             <butcherProducts>
                 <WoolAlpaca>100</WoolAlpaca>
             </butcherProducts>
         </value>
     </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[comps/li[@Class="CompProperties_Shearable"]/woolDef[text()="WoolBison"]]</xpath>
+        <value>
+            <butcherProducts>
+                <WoolBison>100</WoolBison>
+            </butcherProducts>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[comps/li[@Class="CompProperties_Shearable"]/woolDef[text()="WoolSheep"]]</xpath>
+        <value>
+            <butcherProducts>
+                <WoolSheep>100</WoolSheep>
+            </butcherProducts>
+        </value>
+    </Operation>
+
 
     <!--
     wait...*this* patch happens after my def for adding camel hair back into the game
