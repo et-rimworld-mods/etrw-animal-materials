@@ -18,7 +18,7 @@
             <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>1.1</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
         </statBases>
         <stuffProps>
             <stuffAdjective>insect-shell</stuffAdjective>
